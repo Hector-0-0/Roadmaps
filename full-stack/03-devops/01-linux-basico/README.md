@@ -1,61 +1,79 @@
 # 01-linux-basico
 
 ## 1. Qué es y para qué sirve
-Linux es un sistema operativo (SO) open source. Conocerlo es fundamental para servidores, despliegue y DevOps.
+Linux es un sistema operativo (Operating System) de código abierto, tipo Unix. Es ampliamente usado en servidores, contenedores, nube y dispositivos embebidos. Conocerlo es fundamental para DevOps y despliegue.
 
-## 2. Conceptos clave
+## 2. Por qué importa dentro del roadmap y cómo se conecta
+La gran mayoría de servidores usan Linux. Se conecta con SSH, despliegue en EC2, automatización con Ansible y monitoreo.
 
-### Comandos básicos
+## 3. Conceptos clave
+- **Sistema de archivos (Filesystem)**: estructura jerárquica, / (raíz), /home, /etc, /var, /usr, /tmp.
+- **Navegación y archivos**: pwd, ls, cd, find, cat, less, head, tail, touch, cp, mv, rm, mkdir, rmdir.
+- **Permisos (permissions)**: lectura(r), escritura(w), ejecución(x), usuario/grupo/otros, chmod, chown, chgrp.
+- **Usuarios y sudo (superuser do)**: usuarios, grupos, privilegios, sudoers.
+- **Procesos (processes)**: ps, top, htop, kill, jobs, systemctl (systemd).
+- **Redirecciones y pipes (pipes)**: >, >>, <, |, stdin/stdout/stderr.
+- **Gestor de paquetes (package manager)**: apt (Debian/Ubuntu), yum/dnf (RHEL/Amazon Linux).
+- **SSH (Secure Shell)**: conexión remota segura, claves públicas/privadas, puerto 22.
+- **systemd**: sistema de inicialización y gestión de servicios.
+
+## 4. Ejemplos de código comentados, correctos y ejecutables
+
+### Ejemplo 1: Navegación y permisos
 ```bash
-pwd        # directorio actual
-ls         # listar
-cd         # cambiar directorio
-mkdir      # crear directorio
-rm         # eliminar
-cp         # copiar
-mv         # mover/renombrar
-cat        # ver archivo
-nano/vim   # editar
-```
+# Ver directorio actual
+pwd
 
-### Permisos
-```bash
+# Listar con detalles
+ls -la
+
+# Crear archivo y cambiar permisos
+touch script.sh
 chmod +x script.sh
-chown usuario:grupo archivo
+ls -l script.sh
 ```
 
-### Procesos y red
+### Ejemplo 2: Redirecciones, pipes y procesos
 ```bash
-ps aux
-top/htop
-curl
-ssh usuario@ip
+# Guardar salida
+echo "hola" > archivo.txt
+cat archivo.txt
+
+# Pipe: filtrar
+ps aux | grep nginx
+
+# Ver logs recientes
+tail -n 20 /var/log/syslog 2>/dev/null || tail -n 20 /var/log/messages 2>/dev/null
 ```
 
-### Archivos importantes
-- /etc/ hosts, configuración
-- /var/log/ logs
-- ~/.bashrc
+## 5. Errores comunes y buenas prácticas
 
-## 3. Práctica orientativa
-Navegar sistema, crear archivos, permisos, conectar por SSH.
+Errores comunes:
+- Usar `rm -rf /` o rutas peligrosas.
+- Ejecutar comandos como root sin necesidad.
+- Permisos incorrectos en claves SSH (debe ser 400/600).
+- Modificar archivos del sistema sin entender.
+- No verificar ruta antes de borrar.
 
-## 4. Errores comunes y buenas prácticas
-- Cuidado con rm -rf
-- Entender permisos
-- Usar sudo con precaución
-- Aprender paths absolutos/relativos
+Buenas prácticas:
+- Usar `sudo` solo cuando necesario.
+- Aprender rutas absolutas/relativas.
+- Proteger claves SSH con permisos correctos.
+- Usar man pages: `man <comando>`.
+- Hacer backup conceptual antes de cambios críticos.
+- Entender diferencia entre stop/disable en systemd.
 
-## 5. Autoevaluación
-1. ¿Qué es Linux?
+## 6. Autoevaluación
+
+1. ¿Qué es Linux y por qué se usa en servidores?
 2. ¿Diferencia entre ruta absoluta y relativa?
-3. ¿Para qué sirve chmod?
-4. ¿Qué es SSH?
-5. ¿Por qué es importante en DevOps?
+3. ¿Qué significan permisos r,w,x?
+4. ¿Para qué sirve sudo?
+5. ¿Qué diferencia hay entre redirección > y pipe |?
 
-Respuestas orientativas:
-1. SO open source basado en Unix.
-2. Absoluta desde raíz vs relativa desde actual.
-3. Cambiar permisos.
-4. Conexión remota segura.
-5. La mayoría de servidores usan Linux.
+Respuestas esperadas (orientativas):
+1. Sistema operativo open source tipo Unix, estable y seguro para servidores.
+2. Absoluta desde raíz (/), relativa desde directorio actual.
+3. Lectura, escritura, ejecución para usuario/grupo/otros.
+4. Ejecutar comando con privilegios elevados de forma controlada.
+5. > redirige salida a archivo, | pasa salida como entrada a otro comando.
