@@ -37,7 +37,7 @@ ps aux | head -20
 ### Ejemplo 2: Revisar logs y servicio con systemd
 ```bash
 # Logs del sistema
-journalctl -u nginx --since -1h
+journalctl -u nginx  since -1h
 
 # Estado de servicio
 systemctl status nginx

@@ -61,7 +61,7 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
       - name: Ejecutar tests
-        run: npm test --if-present
+        run: npm test  if-present
 
   deploy:
     needs: test

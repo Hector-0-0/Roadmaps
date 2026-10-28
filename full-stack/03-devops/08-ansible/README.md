@@ -33,7 +33,7 @@ servidor2 ansible_host=192.168.1.11 ansible_user=ubuntu
 ### Ejemplo 2: Playbook completo comentado
 ```yaml
 # playbook-nginx.yml
----
+ -
 - name: Instalar y configurar Nginx
   hosts: web
   become: true  # usar sudo
@@ -86,7 +86,7 @@ Buenas prácticas:
 - Aprovechar idempotencia de módulos.
 - Usar roles para proyectos grandes.
 - Usar variables y vault para secretos.
-- Probar con `--check` cuando sea posible.
+- Probar con ` check` cuando sea posible.
 
 ## 6. Autoevaluación
 

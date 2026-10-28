@@ -54,11 +54,11 @@ Ejemplo completo:
   <title>Ejemplo HTML</title>
 </head>
 <body>
-  <!-- Encabezado principal -->
+  <!  Encabezado principal  >
   <h1>Bienvenido</h1>
-  <!-- Párrafo -->
+  <!  Párrafo  >
   <p>Este es un ejemplo básico de HTML.</p>
-  <!-- Enlace -->
+  <!  Enlace  >
   <a href="https://www.w3.org">Sitio web oficial de W3C</a>
 </body>
 </html>

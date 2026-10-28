@@ -13,7 +13,7 @@
 
 ## Nivel intermedio
 3. **Tests con npm** (criterio de terminado: demostrable)
-   Enunciado: Ejecuta `npm ci` y `npm test --if-present`.
+   Enunciado: Ejecuta `npm ci` y `npm test  if-present`.
    Pista: Usa proyecto con package.json.
    Criterio verificable: Workflow instala deps y ejecuta tests.
 

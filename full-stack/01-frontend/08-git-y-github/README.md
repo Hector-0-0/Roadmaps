@@ -14,7 +14,7 @@ git init
 git add .
 git commit -m "mensaje"
 git status
-git log --oneline
+git log  oneline
 git branch
 git checkout -b rama
 git merge rama

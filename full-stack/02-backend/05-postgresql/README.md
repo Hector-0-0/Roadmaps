@@ -32,7 +32,7 @@ DELETE FROM users WHERE id = 1;
 
 ## 4. Ejemplos
 ```sql
--- Relación
+  Relación
 CREATE TABLE posts (
   id SERIAL PRIMARY KEY,
   user_id INTEGER REFERENCES users(id),
