@@ -1,61 +1,93 @@
 # 07-autenticacion-jwt
 
 ## 1. Qué es y para qué sirve
-Autenticación (verificación de identidad) confirma quién es el usuario. Autorización (permiso) define qué puede hacer. JWT (JSON Web Token, token web JSON) es un estándar para transmitir información segura entre partes como token.
+Autenticación verifica la identidad del usuario. Autorización determina qué recursos puede acceder. JWT (JSON Web Token) es un token compacto y firmado usado para transmitir información de forma segura entre cliente y servidor.
 
 ## 2. Por qué importa dentro del roadmap y cómo se conecta
-Esencial para apps con usuarios, roles y protección de rutas. Se conecta con APIs y aplicación completa.
+Fundamental para proteger rutas, manejar sesiones sin estado (stateless) y construir aplicaciones con usuarios. Se conecta con APIs RESTful, Node.js y la app completa.
 
 ## 3. Conceptos clave
+- **Autenticación vs autorización**: identidad vs permisos.
+- **JWT estructura**: header.payload.signature (Base64URL).
+- **Firma (signature)**: garantiza integridad y autenticidad.
+- **Expiración (exp)**: tiempo de validez del token.
+- **Access token y refresh token**: corto y largo plazo.
+- **Almacenamiento seguro**: evitar localStorage para tokens sensibles en ciertos casos; considerar httpOnly cookies.
+- **Hash de contraseñas**: usar bcrypt para nunca guardar en texto plano.
+- **Middleware de autenticación**: verificar token en rutas protegidas.
+- **Vulnerabilidades comunes**: tokens robados, secretos débiles, no expirar, guardar datos sensibles en payload.
 
-### Flujo básico
-1. Usuario envía credenciales
-2. Servidor valida y genera JWT
-3. Cliente envía JWT en header Authorization: Bearer <token>
-4. Servidor verifica token
+## 4. Ejemplos de código comentados, correctos y ejecutables
 
-### Estructura JWT
-Header.Payload.Signature
-
+### Ejemplo 1: Generar y verificar JWT
 ```javascript
-// Ejemplo con jsonwebtoken (concepto)
 const jwt = require('jsonwebtoken');
-const token = jwt.sign({ id: user.id }, 'secret', { expiresIn: '1h' });
-jwt.verify(token, 'secret');
+
+// Generar token
+function generarToken(usuario) {
+  // payload con info mínima (no contraseña)
+  const payload = { id: usuario.id, rol: usuario.rol };
+  // firmar con secreto y expiración
+  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
+}
+
+// Verificar token
+function verificarToken(token) {
+  try {
+    return jwt.verify(token, process.env.JWT_SECRET);
+  } catch (error) {
+    return null;
+  }
+}
+
+module.exports = { generarToken, verificarToken };
 ```
 
-### Seguridad básica
-- Usar HTTPS en producción
-- Secret (clave secreta) fuerte
-- Expiración de tokens
-- No guardar datos sensibles en payload
-- Hash de contraseñas (bcrypt)
+### Ejemplo 2: Middleware de autenticación
+```javascript
+const { verificarToken } = require('./auth');
 
-## 4. Errores comunes y buenas prácticas
+function authMiddleware(req, res, next) {
+  const header = req.headers.authorization || '';
+  const token = header.startsWith('Bearer ') ? header.slice(7) : null;
+  if (!token) return res.status(401).json({ error: 'Token requerido' });
+  const decoded = verificarToken(token);
+  if (!decoded) return res.status(401).json({ error: 'Token inválido o expirado' });
+  req.usuario = decoded;
+  next();
+}
+
+module.exports = authMiddleware;
+```
+
+## 5. Errores comunes y buenas prácticas
 
 Errores comunes:
-- Guardar contraseña en texto plano.
-- Usar secret débil.
+- Guardar contraseñas en texto plano.
+- Poner datos sensibles en payload JWT.
+- Usar secretos débiles o hardcodeados.
 - No expirar tokens.
-- Confiar en payload sin verificar.
+- Almacenar tokens de forma insegura.
 
 Buenas prácticas:
-- Usar bcrypt para passwords.
-- Tokens con expiración.
-- Verificar en middleware.
-- Considerar refresh tokens (avanzado).
+- Usar bcrypt para hash de contraseñas.
+- JWT_SECRET fuerte en variables de entorno.
+- Access token corto, refresh token con rotación.
+- Verificar token con middleware.
+- Usar HTTPS en producción.
+- Validar permisos por rol en autorización.
 
-## 5. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Diferencia entre autenticación y autorización?
-2. ¿Qué es JWT?
-3. ¿Cómo se envía JWT?
-4. ¿Por qué hashear contraseñas?
-5. ¿Qué pasa si alguien roba un JWT?
+2. ¿Qué partes tiene un JWT?
+3. ¿Por qué no guardar contraseñas en texto plano?
+4. ¿Diferencia entre access token y refresh token?
+5. ¿Cómo proteger rutas con JWT?
 
-Respuestas orientativas:
-1. Identidad vs permisos.
-2. Token firmado para transmitir claims.
-3. Header Authorization: Bearer token.
-4. Proteger si hay filtración.
-5. Podría usarse hasta expirar; por eso expiración + medidas.
+Respuestas esperadas (orientativas):
+1. Autenticación identifica, autorización define permisos.
+2. Header, payload, signature.
+3. Si hay filtración, se exponen contraseñas; usar hash (bcrypt).
+4. Access corto para acceso, refresh más largo para obtener nuevo access token.
+5. Usar middleware que verifique token en header Authorization: Bearer.
