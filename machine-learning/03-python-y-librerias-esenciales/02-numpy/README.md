@@ -58,3 +58,16 @@ print(np.linalg.det(A))
 
 5. **Pregunta:** ¿Por qué es importante evitar bucles en NumPy?  
    **Respuesta orientativa:** Vectorización es mucho más eficiente y código más conciso.
+
+
+## 7. Aplicaciones en Machine Learning
+
+NumPy se usa para representar datos como matrices, calcular distancias, operaciones en regresión lineal, normalización y muchas operaciones vectorizadas. Es la base sobre la que construyen pandas y scikit-learn.
+
+## 8. Checklist de aprendizaje
+
+- [ ] Crear arrays con diferentes formas
+- [ ] Dominar indexado y slicing
+- [ ] Aplicar broadcasting correctamente
+- [ ] Usar operaciones vectorizadas
+- [ ] Realizar operaciones de álgebra lineal básica

@@ -63,3 +63,16 @@ print(df.groupby('target').mean())
 
 5. **Pregunta:** ¿Por qué usar copy() al filtrar?  
    **Respuesta orientativa:** Evita SettingWithCopyWarning y asegura copia independiente.
+
+
+## 7. Aplicaciones en Machine Learning
+
+pandas es fundamental para cargar datasets, explorar, limpiar, crear features y preparar datos para modelado. Permite integrar con scikit-learn sin problemas.
+
+## 8. Checklist de aprendizaje
+
+- [ ] Crear y manipular DataFrames
+- [ ] Filtrar y seleccionar datos
+- [ ] Agrupar y agregar
+- [ ] Manejar valores faltantes
+- [ ] Preparar datos para entrenamiento
