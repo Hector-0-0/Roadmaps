@@ -1,47 +1,47 @@
-# Práctica integradora
+# Práctica - 02 Aprendizaje Supervisado Regresion
 
 ## Nivel básico
 
-1. **Conceptos**
-   Enunciado: Identifica cuándo usar técnicas del grupo con ejemplos.
-   Pista: Relaciona con tipo de problema supervisado/no supervisado/por refuerzo.
-   Criterio verificable: Clasificación correcta con justificación.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 02 aprendizaje supervisado regresion.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Exploración**
-   Enunciado: Carga dataset apropiado y analiza características.
-   Pista: Usa Iris/Wine según corresponda.
-   Criterio verificable: Análisis con estadísticas correctas.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 02 aprendizaje supervisado regresion usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Base**
-   Enunciado: Implementa enfoque base con validación correcta.
-   Pista: Usa train_test_split estratificado.
-   Criterio verificable: Métrica numérica en test.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 02 aprendizaje supervisado regresion con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Pipeline**
-   Enunciado: Usa Pipeline sin fuga de datos.
-   Pista: sklearn.pipeline.Pipeline.
-   Criterio verificable: Pipeline funcional.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
 5. **Validación cruzada**
-   Enunciado: Validación cruzada con métricas apropiadas.
-   Pista: cross_val_score.
-   Criterio verificable: Resultados con media y desviación.
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
 6. **Comparación**
-   Enunciado: Compara enfoques del grupo.
-   Pista: Misma validación.
-   Criterio verificable: Comparación numérica.
+   Enunciado: Compara dos configuraciones distintas de 02 aprendizaje supervisado regresion con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Integrador**
-   Enunciado: Solución completa end to end.
-   Pista: Preparación, modelado, evaluación.
-   Criterio verificable: Métricas en test.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Análisis**
-   Enunciado: Análisis crítico con mejoras.
-   Pista: Cuantifica mejoras.
-   Criterio verificable: Mejoras cuantificadas.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.
