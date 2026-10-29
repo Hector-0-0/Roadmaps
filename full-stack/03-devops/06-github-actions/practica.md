@@ -20,7 +20,7 @@
 ## Nivel intermedio
 
 4. **Caché de dependencias npm**
-   Enunciado: Añade caché con `actions/cache@v4` para `~/.npm` o usa `cache: 'npm'` en setup-node. Compara tiempo de ejecución con y sin caché conceptualmente.
+   Enunciado: Añade caché con `actions/cache@v4` para `~/.npm` o usa `cache: 'npm'` en setup-node. Mide y documenta la diferencia de tiempo entre ejecuciones con y sin caché.
    Pista: setup-node soporta `cache: 'npm'` directamente. El caché acelera instalaciones en ejecuciones posteriores.
    Criterio verificable: Workflow usa caché correctamente, logs muestran cache hit/miss, instalación más rápida.
 
