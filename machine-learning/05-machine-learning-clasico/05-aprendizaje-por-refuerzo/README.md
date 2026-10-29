@@ -71,3 +71,7 @@ Los algoritmos de este grupo se aplican con datasets públicos usando pipelines,
 - [ ] Uso validación cruzada
 - [ ] Evalúo con métricas correctas
 - [ ] Comparo resultados objetivamente
+
+## 9. Recursos adicionales
+
+Se recomienda practicar con entornos simples y entender los fundamentos antes de pasar a DQN y algoritmos avanzados.
