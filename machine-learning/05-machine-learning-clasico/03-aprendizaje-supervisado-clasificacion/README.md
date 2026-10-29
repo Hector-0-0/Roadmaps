@@ -27,9 +27,9 @@ print(X_train.shape, X_test.shape)
 ```
 
 ```python
-from sklearn.datasets import load_wine
+from sklearn.datasets import load_breast_cancer
 from sklearn.preprocessing import StandardScaler
-X = load_wine().data
+X = load_breast_cancer().data
 X_s = StandardScaler().fit_transform(X)
 print(X_s.mean(axis=0)[:3])
 ```
