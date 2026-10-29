@@ -1,17 +1,15 @@
 # Roadmaps
 
-Repositorio educativo para explorar, practicar y aprender distintas especializaciones de desarrollo de software.
-
-## Roadmaps
+## Índice de roadmaps
 
 | Roadmap | Descripción corta | Estado |
 | --- | --- | --- |
-| [Full Stack](full-stack/README.md) | Aprendizaje integral de desarrollo frontend, backend, despliegue y automatización. | En progreso |
+| [full-stack](full-stack/README.md) | Ruta completa para convertirse en desarrollador Full Stack | En progreso |
+| [machine-learning](machine-learning/README.md) | Ruta completa para convertirse en Ingeniero de Machine Learning | En progreso |
 
 ## Cómo usar el repo
 
-1. Elige un roadmap desde la tabla.
-2. Sigue el mapa de etapas en su `README.md` en orden.
-3. Usa `PROGRESO.md` para marcar lo que vayas completando.
-4. Completa los temas con su teoría, práctica y recursos, y aplica lo aprendido en los checkpoints.
-5. Cada carpeta tiene lo necesario para estudiar de forma autónoma.
+1. Elige un roadmap y lee su `README.md` para conocer objetivo, público objetivo y mapa de etapas.
+2. Sigue las etapas en orden, leyendo cada tema y resolviendo su `practica.md`.
+3. Usa `PROGRESO.md` para marcar casillas y checkpoints.
+4. Ejecuta `python3 scripts/verificar.py` antes de dar por terminada una tarea para validar el contenido.
