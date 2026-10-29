@@ -1,47 +1,47 @@
-# Práctica - pandas
+# Práctica - 03 Pandas
 
 ## Nivel básico
 
-1. **Crear DataFrame**
-   Enunciado: Crea DataFrame desde diccionario, lista de listas y desde dataset Iris.
-   Pista: Usa pd.DataFrame().
-   Criterio verificable: 3 formas diferentes funcionando correctamente.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 03 pandas.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Exploración**
-   Enunciado: Usa head(), tail(), info(), describe(), shape, columns.
-   Pista: Explora dataset Iris completo.
-   Criterio verificable: Todas las funciones usadas con salida correcta.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 03 pandas usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Selección y filtrado**
-   Enunciado: Selecciona columnas, filtra filas con condición booleana.
-   Pista: Usa df['col'] o df[['col1','col2']].
-   Criterio verificable: Selección y filtrado correctos.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 03 pandas con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Limpieza**
-   Enunciado: Crea DataFrame con NaN, usa dropna, fillna con media.
-   Pista: df.fillna(df.mean()).
-   Criterio verificable: Valores faltantes tratados correctamente.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **Agrupación**
-   Enunciado: Agrupa Iris por target con mean, count, std.
-   Pista: df.groupby('target').agg().
-   Criterio verificable: Agregaciones correctas por grupo.
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Transformación**
-   Enunciado: Crea nueva columna, aplica función con apply(), cambia tipos con astype().
-   Pista: Usa lambda o función definida.
-   Criterio verificable: Transformaciones aplicadas correctamente.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 03 pandas con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Análisis completo**
-   Enunciado: Carga Iris, analiza por especie, crea resumen y ordena resultados.
-   Pista: Combina groupby, sort_values.
-   Criterio verificable: Resumen completo con hallazgos numéricos.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Preparación para ML**
-   Enunciado: Separa features/target, verifica dtypes, crea copia para modelado.
-   Pista: X = df.drop('target', axis=1), y = df['target'].
-   Criterio verificable: X,y correctos listos para train_test_split.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

@@ -1,47 +1,47 @@
-# Práctica - ¿Qué es un Machine Learning Engineer?
+# Práctica - 01 Que Es Un Ml Engineer
 
 ## Nivel básico
 
-1. **Definir el rol**
-   Enunciado: Escribe una definición propia de Machine Learning Engineer, mencionando entrenamiento, evaluación y despliegue.
-   Pista: Usa la diferencia entre ajustar un modelo y usarlo para predecir datos nuevos.
-   Criterio verificable: La respuesta incluye las tres acciones (entrenamiento, evaluación, despliegue) con descripción correcta.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 01 que es un ml engineer.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Explorar Iris**
-   Enunciado: Carga el dataset Iris con scikit-learn y muestra forma, nombres de características y nombres de clases.
-   Pista: Usa load_iris() de sklearn.datasets y accede a data, feature_names, target_names.
-   Criterio verificable: Código ejecutable que imprime shape, feature_names y target_names sin errores.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 01 que es un ml engineer usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **División estratificada**
-   Enunciado: Divide Iris con train_test_split usando test_size=0.2, random_state=42 y stratify=y. Verifica proporciones.
-   Pista: Calcula conteo de clases en y_train y y_test con np.bincount.
-   Criterio verificable: Proporciones de clases en train y test son similares a las del dataset completo.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 01 que es un ml engineer con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Entrenar y evaluar**
-   Enunciado: Entrena LogisticRegression(max_iter=200) en los datos divididos y calcula accuracy con accuracy_score.
-   Pista: Ajusta solo con X_train,y_train. Evalúa con X_test,y_test.
-   Criterio verificable: Se obtiene un valor numérico de accuracy entre 0 y 1, calculado correctamente.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **Pipeline básico**
-   Enunciado: Crea un Pipeline con StandardScaler y LogisticRegression. Entrena y evalúa obteniendo accuracy.
-   Pista: Usa sklearn.pipeline.Pipeline con lista de tuplas ('nombre', estimador).
-   Criterio verificable: Pipeline definido correctamente, fit solo en train, accuracy calculado en test.
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Reproducibilidad**
-   Enunciado: Ejecuta el mismo experimento dos veces con mismo random_state y muestra que los resultados son idénticos.
-   Pista: Guarda accuracy en dos variables y verifica igualdad.
-   Criterio verificable: Los dos valores de accuracy son exactamente iguales.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 01 que es un ml engineer con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Comparar con y sin escalado**
-   Enunciado: Compara accuracy de LogisticRegression con y sin StandardScaler usando mismo split estratificado.
-   Pista: Usa Pipeline para el caso con escalado. Mantén random_state idéntico.
-   Criterio verificable: Se reportan ambos valores numéricos, con explicación de la diferencia observada.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Flujo completo documentado**
-   Enunciado: Implementa un flujo completo para Iris: carga, división estratificada, pipeline, validación cruzada (cv=5) y reporte.
-   Pista: Usa cross_val_score con el pipeline. Calcula media y desviación estándar.
-   Criterio verificable: Código ejecutable que muestra scores de 5 folds, media y desviación estándar con valores numéricos.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

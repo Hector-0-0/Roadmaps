@@ -1,47 +1,47 @@
-# Práctica - Cálculo para Machine Learning
+# Práctica - 01 Calculo
 
 ## Nivel básico
 
-1. **Derivadas numéricas**
-   Enunciado: Implementa derivada numérica hacia adelante para $f(x)=x^2+3x+1$ en $x=2$ y compara con derivada analítica $f'(x)=2x+3$.
-   Pista: Usa fórmula $f'(x)\approx \frac{f(x+h)-f(x)}{h}$ con $h=1e-6$.
-   Criterio verificable: Error absoluto menor a 1e-8 entre derivada numérica y analítica (valor esperado 7.0).
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 01 calculo.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Derivadas parciales**
-   Enunciado: Para $f(x,y)=x^2+y^2+3xy$, calcula $\frac{\partial f}{\partial x}$ y $\frac{\partial f}{\partial y}$ en (1,2) numéricamente.
-   Pista: Usa derivada parcial numérica fijando la otra variable.
-   Criterio verificable: Valores numéricos correctos (esperados: df/dx=8, df/dy=7 aproximadamente con alta precisión).
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 01 calculo usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Regla de la cadena**
-   Enunciado: Implementa $h(x)=\sin(x^2)$ y calcula $h'(x)$ numéricamente en $x=1.0$ comparando con $\cos(x^2)*2x$.
-   Pista: Usa $h'(x)\approx \frac{h(x+h)-h(x)}{h}$.
-   Criterio verificable: Coincidencia con valor analítico $\cos(1)*2$ con error menor a 1e-7.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 01 calculo con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Gradiente descendente unidimensional**
-   Enunciado: Minimiza $f(x)=x^2$ con descenso por gradiente empezando en $x=5$, lr=0.1, 50 iteraciones.
-   Pista: $x_{t+1}=x_t - lr*2*x_t$. Guarda historial de $f(x)$.
-   Criterio verificable: $f(x)$ disminuye monótonamente y $|x|<0.01$ tras 50 iteraciones.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **Gradiente descendente bidimensional**
-   Enunciado: Minimiza $f(x,y)=x^2+y^2$ con gradiente $[2x,2y]$ empezando en (3,4), lr=0.1, 30 iteraciones.
-   Pista: Actualiza x,y simultáneamente.
-   Criterio verificable: $f(x,y)<0.01$ tras 30 iteraciones con valores cercanos a (0,0).
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Efecto del learning rate**
-   Enunciado: Prueba lr=0.01, 0.1, 0.5 para minimizar $f(x)=x^2$. Grafica convergencia conceptualmente mostrando comportamiento.
-   Pista: Con lr muy grande puede divergir, con muy pequeño converge lento.
-   Criterio verificable: Se observan y documentan los tres casos con valores numéricos.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 01 calculo con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Regresión lineal con gradiente descendente**
-   Enunciado: Genera datos $y=2x+1+ruido$ con numpy, implementa descenso por gradiente para MSE y estima $w,b$.
-   Pista: MSE = $(1/n)\sum (wx_i+b-y_i)^2$, gradientes w,b derivados correctamente.
-   Criterio verificable: $w\in[1.5,2.5], b\in[0.5,1.5]$ tras convergencia.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Jacobiano básico**
-   Enunciado: Para $g(x,y)=[x^2+y, xy]^T$ calcula Jacobiano numéricamente en (1,2) y verifica forma correcta.
-   Pista: Jacobiano es matriz 2x2 con derivadas parciales.
-   Criterio verificable: Matriz Jacobiana con dimensiones 2x2 y valores numéricos correctos calculados.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

@@ -1,47 +1,47 @@
-# Práctica - Probabilidad para Machine Learning
+# Práctica - 04 Probabilidad
 
 ## Nivel básico
 
-1. **Probabilidad básica**
-   Enunciado: Calcula probabilidades con reglas de suma y producto para dos eventos independientes.
-   Pista: Usa ejemplos numéricos concretos.
-   Criterio verificable: Cálculos correctos con fórmulas aplicadas correctamente.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 04 probabilidad.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Simulación**
-   Enunciado: Simula 10000 lanzamientos de moneda con numpy.random y estima P(cara).
-   Pista: Usa np.random.choice o randint.
-   Criterio verificable: Estimación cercana a 0.5 con convergencia demostrada.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 04 probabilidad usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Distribución Normal**
-   Enunciado: Genera N(0,1), calcula P(-1 < Z < 1) empíricamente y teóricamente.
-   Pista: Usa stats.norm.cdf.
-   Criterio verificable: Valores empírico y teórico (~0.6827) comparados.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 04 probabilidad con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Teorema de Bayes numérico**
-   Enunciado: Resuelve problema diagnóstico: prevalencia 1%, sensibilidad 99%, especificidad 95%. Calcula P(enfermo|positivo).
-   Pista: Aplica fórmula paso a paso.
-   Criterio verificable: Resultado numérico correcto (~0.166) con pasos documentados.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **Naive Bayes conceptual práctico**
-   Enunciado: Implementa clasificador Naive Bayes simple con conteos para datos categóricos pequeños.
-   Pista: Asume independencia condicional. Usa Bayes por clase.
-   Criterio verificable: Predicción correcta con probabilidades calculadas.
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Variables aleatorias**
-   Enunciado: Simula Binomial(n=10,p=0.3), calcula media/varianza empírica y teórica.
-   Pista: Teórica: E[X]=np, Var(X)=np(1-p).
-   Criterio verificable: Valores empíricos cercanos a teóricos.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 04 probabilidad con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Monte Carlo**
-   Enunciado: Estima π usando método Monte Carlo con 100000 puntos.
-   Pista: Puntos dentro círculo unitario / total * 4.
-   Criterio verificable: Estimación de π entre 3.13 y 3.15 con código correcto.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Clasificación probabilística**
-   Enunciado: Con datos de Iris usa probabilidades de LogisticRegression (predict_proba) y analiza calibración básica.
-   Pista: Usa sklearn. Compara probabilidades con frecuencias.
-   Criterio verificable: Probabilidades extraídas, análisis con valores numéricos.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

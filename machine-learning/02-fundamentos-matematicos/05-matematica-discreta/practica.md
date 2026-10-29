@@ -1,47 +1,47 @@
-# Práctica - Matemática discreta para Machine Learning
+# Práctica - 05 Matematica Discreta
 
 ## Nivel básico
 
-1. **Conjuntos**
-   Enunciado: Dados A={1,2,3,4}, B={3,4,5,6} calcula unión, intersección, diferencia A-B y diferencia simétrica.
-   Pista: Usa la clase set de Python con operadores |, &, -, ^ o métodos union/intersection/difference/symmetric_difference.
-   Criterio verificable: Los 4 resultados son correctos (union {1..6}, intersección {3,4}, A-B {1,2}, simétrica {1,2,5,6}).
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 05 matematica discreta.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Combinatoria**
-   Enunciado: Usa itertools.permutations y itertools.combinations para obtener P(4,2) y C(4,2) mostrando las listas generadas.
-   Pista: Recuerda que permutations importa el orden y combinations no lo importa, por lo que los conteos difieren.
-   Criterio verificable: Se obtienen 12 permutaciones y 6 combinaciones, con conteos numéricos correctos.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 05 matematica discreta usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Conteo manual**
-   Enunciado: Calcula C(10,3) usando la fórmula $C(n,r)=\frac{n!}{r!(n-r)!}$ con Python y verifica con math.comb o itertools.combinations.
-   Pista: Usa math.comb o math.factorial para calcular la fórmula y compara con el conteo real de combinaciones.
-   Criterio verificable: Resultado numérico es 120 y coincide con la longitud de la lista de combinaciones.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 05 matematica discreta con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Grafo básico**
-   Enunciado: Crea grafo no dirigido, implementa BFS desde un nodo mostrando orden de visita.
-   Pista: Usa cola con índice o collections.deque.
-   Criterio verificable: BFS retorna nodos visitados en orden correcto.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **DFS**
-   Enunciado: Implementa DFS recursivo para el mismo grafo usando un conjunto de visitados para evitar ciclos.
-   Pista: Define la función recursiva que marca como visitado y recorre vecinos, controlando el caso de nodos ya visitados.
-   Criterio verificable: DFS recorre todos los nodos alcanzables, no repite nodos y se documentan diferencias con BFS.
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Árbol de decisión simple**
-   Enunciado: Modela un árbol binario simple con diccionarios (valor, izquierda, derecha) y realiza recorrido preorden con DFS recursivo.
-   Pista: Usa recursión definiendo caso base cuando el nodo es None y visitando raíz, izquierda, derecha en ese orden.
-   Criterio verificable: El recorrido preorden produce la secuencia correcta para el árbol definido.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 05 matematica discreta con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Subconjuntos**
-   Enunciado: Genera todos los subconjuntos de {a,b,c} usando recursión o itertools.chain, incluyendo el conjunto vacío.
-   Pista: Usa el principio de que para cada elemento puedes incluirlo o excluirlo, resultando en 2^n subconjuntos totales.
-   Criterio verificable: Se generan exactamente 8 subconjuntos incluyendo el vacío y todos son distintos.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Aplicación a ML**
-   Enunciado: Cuenta espacios de búsqueda para grid de hiperparámetros simple y analiza complejidad.
-   Pista: Si 3 params con 4 valores cada uno: 4^3=64 combinaciones.
-   Criterio verificable: Conteo correcto con notación O y explicación de crecimiento exponencial.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

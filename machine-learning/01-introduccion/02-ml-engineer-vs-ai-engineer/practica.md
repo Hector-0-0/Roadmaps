@@ -1,47 +1,47 @@
-# Práctica - ML Engineer vs AI Engineer
+# Práctica - 02 Ml Engineer Vs Ai Engineer
 
 ## Nivel básico
 
-1. **Comparación por aspectos**
-   Enunciado: Crea una tabla con al menos 5 aspectos comparando ML Engineer y AI Engineer.
-   Pista: Incluye enfoque, datos, herramientas, despliegue y matemáticas.
-   Criterio verificable: Tabla con 5 aspectos y diferencias correctas para ambos roles.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 02 ml engineer vs ai engineer.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Identificar enfoque**
-   Enunciado: Dado 3 casos de uso, indica si corresponde más a ML Engineer o AI Engineer y justifica.
-   Pista: Casos: detección de fraude, chatbot con base de conocimiento, predicción de demanda.
-   Criterio verificable: Clasificación correcta con justificación de al menos 2 razones por caso.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 02 ml engineer vs ai engineer usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Entrenar modelo propio**
-   Enunciado: Con dataset Iris entrena RandomForestClassifier y muestra classification_report.
-   Pista: Usa train_test_split estratificado y random_state fijo.
-   Criterio verificable: Reporte generado con precision, recall, f1-score por clase.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 02 ml engineer vs ai engineer con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Analizar herramientas**
-   Enunciado: Lista 3 herramientas por rol con descripción de uso de una línea.
-   Pista: ML Engineer: scikit-learn, MLflow, FastAPI. AI Engineer: LangChain, vector stores, LLM APIs.
-   Criterio verificable: 6 herramientas totales con descripciones correctas y diferenciadas.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **Evaluar enfoque**
-   Enunciado: Para un sistema de recomendaciones, compara costo/complejidad entre entrenar modelo propio vs usar API.
-   Pista: Considera datos disponibles, latencia, mantenimiento y privacidad.
-   Criterio verificable: Comparación con al menos 4 criterios y conclusión razonada.
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **RAG conceptual práctico**
-   Enunciado: Diseña un flujo RAG paso a paso para responder preguntas sobre documentación interna.
-   Pista: Incluye ingesta, embeddings, búsqueda, prompt, respuesta.
-   Criterio verificable: Flujo con 6 pasos detallados y descripción de cada componente.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 02 ml engineer vs ai engineer con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Solución híbrida**
-   Enunciado: Propón una solución híbrida que combine ML clásico y componentes de IA generativa para un caso real.
-   Pista: Ejemplo: clasificar tickets con modelo propio y generar respuesta con LLM usando contexto.
-   Criterio verificable: Arquitectura híbrida con justificación, componentes y beneficios definidos.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Matriz de decisión**
-   Enunciado: Crea matriz con criterios (datos, costo, tiempo, precisión, privacidad) para elegir entre enfoque propio o integrado.
-   Pista: Asigna pesos y puntaje 1-5 con justificación.
-   Criterio verificable: Matriz completa con pesos, puntajes, resultado numérico y conclusión.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

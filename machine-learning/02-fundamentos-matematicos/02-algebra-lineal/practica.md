@@ -1,47 +1,47 @@
-# Práctica - Álgebra lineal para Machine Learning
+# Práctica - 02 Algebra Lineal
 
 ## Nivel básico
 
-1. **Vectores**
-   Enunciado: Crea dos vectores en R^3, calcula producto escalar, suma, resta y norma euclidiana.
-   Pista: Usa numpy arrays. Normas con np.linalg.norm.
-   Criterio verificable: Producto escalar numérico correcto, normas calculadas correctamente.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 02 algebra lineal.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Matrices**
-   Enunciado: Crea dos matrices 2x2, multiplica con @, calcula transpuesta, determinante e inversa.
-   Pista: Verifica dimensiones antes de multiplicar.
-   Criterio verificable: Producto matricial correcto, det e inv calculados con numpy.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 02 algebra lineal usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Sistema lineal**
-   Enunciado: Resuelve $\begin{bmatrix}2&1\\1&3\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}5\\10\end{bmatrix}$ con np.linalg.solve.
-   Pista: Compara con multiplicación A*x para verificar.
-   Criterio verificable: Solución numérica correcta verificada con A@x == b.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 02 algebra lineal con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Autovalores y autovectores**
-   Enunciado: Calcula autovalores y autovectores de una matriz simétrica. Verifica $Av = \lambda v$.
-   Pista: Usa np.linalg.eig. Verifica con producto matricial.
-   Criterio verificable: Verificación numérica $||Av - \lambda v|| < 1e-8$ para al menos un par.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **SVD básico**
-   Enunciado: Aplica SVD a matriz 3x2, reconstruye con top 1 y top 2 valores singulares.
-   Pista: Usa np.linalg.svd. Calcula error de reconstrucción con Frobenius.
-   Criterio verificable: Reconstrucción con rank completo igual a original (error numérico pequeño), aproximación con rank menor calculada.
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Proyección**
-   Enunciado: Proyecta vector v sobre vector u calculando $proj_u v = \frac{v^T u}{u^T u}u$.
-   Pista: Implementa fórmula y verifica geométricamente.
-   Criterio verificable: Proyección correcta con valores numéricos verificables.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 02 algebra lineal con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **PCA desde cero**
-   Enunciado: Con dataset Iris, centra datos, calcula covarianza, autovalores/autovectores, proyecta a 2D.
-   Pista: Usa solo numpy. Ordena por autovalor descendente.
-   Criterio verificable: Proyección 2D generada, varianza explicada calculada correctamente.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **SVD para compresión**
-   Enunciado: Genera matriz aleatoria, comprime con SVD manteniendo 50% energía (suma valores singulares) y calcula error.
-   Pista: Calcula energía acumulada = suma(s[0:k])/suma(s).
-   Criterio verificable: k seleccionado correctamente, error de reconstrucción calculado numéricamente.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

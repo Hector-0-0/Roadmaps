@@ -1,47 +1,47 @@
-# Práctica - Python para Machine Learning
+# Práctica - 01 Python Para Ml
 
 ## Nivel básico
 
-1. **Tipos y estructuras**
-   Enunciado: Crea lista, tupla, diccionario y set con datos relacionados a ML y muestra sus diferencias.
-   Pista: Prueba métodos como append (lista) vs intentar modificar tupla.
-   Criterio verificable: Se muestran las 4 estructuras con ejemplos y diferencias correctas.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 01 python para ml.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **List comprehensions**
-   Enunciado: Filtra números pares y eleva al cuadrado usando list comprehension.
-   Pista: Sintaxis [expr for x in lista if condicion].
-   Criterio verificable: Resultado correcto con list comprehension.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 01 python para ml usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Funciones**
-   Enunciado: Crea función que calcule media, mínimo y máximo de una lista retornando diccionario.
-   Pista: Usa sum(), len(), min(), max().
-   Criterio verificable: Función retorna diccionario con las 3 claves correctas.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 01 python para ml con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Manejo de errores**
-   Enunciado: Lee archivo con try/except manejando FileNotFoundError y muestra mensaje apropiado.
-   Pista: Usa open() en bloque try.
-   Criterio verificable: Manejo correcto del error con mensaje claro.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **POO para Dataset**
-   Enunciado: Crea clase Dataset con métodos cargar, info y shape usando datos dummy.
-   Pista: Usa __init__ para atributos.
-   Criterio verificable: Clase funcional con los 3 métodos operativos.
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Trabajar con zip y enumerate**
-   Enunciado: Combina dos listas con zip y enuméralos con enumerate imprimiendo pares.
-   Pista: for i,(a,b) in enumerate(zip(lista1,lista2)).
-   Criterio verificable: Salida correcta con índices y pares.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 01 python para ml con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Pipeline simple**
-   Enunciado: Implementa clase Pipeline con métodos add_step y run para encadenar funciones.
-   Pista: Almacena funciones en lista y aplícalas secuencialmente.
-   Criterio verificable: Pipeline ejecuta pasos en orden y retorna resultado correcto.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Análisis con Python puro**
-   Enunciado: Procesa lista de valores calculando estadísticos básicos sin usar numpy/pandas.
-   Pista: Implementa media, varianza, desviación.
-   Criterio verificable: Cálculos correctos comparados con valores esperados.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

@@ -1,47 +1,47 @@
-# Práctica
+# Práctica - 02 Ia Explicable
 
 ## Nivel básico
 
-1. **Exploración con Iris**
-   Enunciado: Carga dataset Iris, explora forma, tipos y estadísticas básicas.
-   Pista: Usa pandas y numpy para obtener resumen completo de los datos.
-   Criterio verificable: Se muestran shape, dtypes, describe() con valores numéricos correctos.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 02 ia explicable.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Preparación correcta**
-   Enunciado: Divide datos en train/test con estratificación usando random_state=42.
-   Pista: Usa train_test_split con stratify=y para mantener proporciones de clases.
-   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 02 ia explicable usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
 3. **Implementación base**
-   Enunciado: Implementa solución base con algoritmo apropiado y evalúa con métrica correcta.
-   Pista: Elige métrica acorde al tipo de problema y evalúa solo en test.
-   Criterio verificable: Métrica numérica calculada correctamente en conjunto de test.
+   Enunciado: Implementa técnica base de 02 ia explicable con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Pipeline sin fuga**
-   Enunciado: Construye Pipeline con transformaciones y modelo, entrena y evalúa correctamente.
-   Pista: Usa sklearn.pipeline.Pipeline para encadenar pasos evitando fuga de datos.
-   Criterio verificable: Pipeline funcional con fit en train y predict en test.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
 5. **Validación cruzada**
-   Enunciado: Usa cross_val_score con cv=5 y reporta media y desviación estándar.
-   Pista: Usa numpy para calcular mean y std de los scores obtenidos.
-   Criterio verificable: 5 scores mostrados, media y desviación calculadas numéricamente.
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Comparación objetiva**
-   Enunciado: Compara al menos dos configuraciones con misma validación cruzada.
-   Pista: Mantén mismo split/validación para comparación justa entre configuraciones.
-   Criterio verificable: Comparación con valores numéricos y conclusión fundamentada.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 02 ia explicable con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Caso práctico completo**
-   Enunciado: Resuelve caso end to end con limpieza, modelado, validación y evaluación.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
    Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
-   Criterio verificable: Solución completa con métricas numéricas en test y explicación clara.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
 8. **Análisis crítico**
-   Enunciado: Analiza limitaciones, posibles mejoras y propone siguiente paso con justificación.
-   Pista: Considera sobreajuste, datos insuficientes o mejoras posibles.
-   Criterio verificable: Análisis con al menos 3 limitaciones y 3 mejoras con justificación.
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.

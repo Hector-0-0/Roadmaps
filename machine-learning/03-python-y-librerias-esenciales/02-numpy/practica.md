@@ -1,47 +1,47 @@
-# Práctica - NumPy
+# Práctica - 02 Numpy
 
 ## Nivel básico
 
-1. **Crear arrays**
-   Enunciado: Crea arrays con np.array, np.zeros, np.ones, np.arange, np.linspace.
-   Pista: Verifica shape y dtype.
-   Criterio verificable: 5 arrays creados con formas correctas.
+1. **Exploración**
+   Enunciado: Carga dataset Iris con código y analiza características relevantes para 02 numpy.
+   Pista: Usa pandas para explorar forma, tipos y estadísticas básicas del dataset completo.
+   Criterio verificable: Se reporta shape, columnas y al menos 3 estadísticas numéricas correctas.
 
-2. **Indexado y slicing**
-   Enunciado: Extrae submatriz 2x2 de matriz 4x4 usando slicing.
-   Pista: Usa arr[0:2, 0:2].
-   Criterio verificable: Submatriz extraída correctamente.
+2. **Preparación**
+   Enunciado: Aplica preparación adecuada para 02 numpy usando train_test_split con random_state=42 y estratificación.
+   Pista: Usa sklearn.model_selection.train_test_split con stratify cuando hay variable objetivo categórica.
+   Criterio verificable: División con tamaños correctos y proporciones estratificadas verificadas numéricamente.
 
-3. **Operaciones vectorizadas**
-   Enunciado: Suma, multiplica elemento a elemento y calcula potencia sin bucles.
-   Pista: Usa operadores +, *, **.
-   Criterio verificable: Todas las operaciones vectorizadas correctas.
+3. **Implementación base**
+   Enunciado: Implementa técnica base de 02 numpy con dataset Iris usando scikit-learn.
+   Pista: Elige algoritmo apropiado, usa parámetros explícitos y evalúa correctamente.
+   Criterio verificable: Implementación ejecutable con métrica numérica calculada en test.
 
 ## Nivel intermedio
 
-4. **Broadcasting**
-   Enunciado: Suma vector fila a cada fila de matriz usando broadcasting.
-   Pista: Verifica shapes compatibles.
-   Criterio verificable: Resultado correcto con broadcasting.
+4. **Integración en pipeline**
+   Enunciado: Crea Pipeline que integre transformaciones y proceso sin fuga de datos usando sklearn.pipeline.Pipeline.
+   Pista: Ajusta todas las transformaciones solo con datos de entrenamiento mediante fit_transform.
+   Criterio verificable: Pipeline funcional con fit en train y predict en test sin errores.
 
-5. **Estadísticas con NumPy**
-   Enunciado: Calcula media, mediana, std, min, max por columna con Iris.
-   Pista: Usa axis=0.
-   Criterio verificable: Estadísticos calculados correctamente por columna.
+5. **Validación cruzada**
+   Enunciado: Valida con cross_val_score cv=5 calculando media y desviación estándar con numpy.
+   Pista: Usa cross_val_score del pipeline o estimador con validación cruzada adecuada.
+   Criterio verificable: 5 valores numéricos mostrados con media y desviación estándar calculadas correctamente.
 
-6. **Álgebra lineal**
-   Enunciado: Multiplica matrices, inversa, determinante, autovalores.
-   Pista: Usa np.linalg.
-   Criterio verificable: Todas las operaciones correctas con verificación.
+6. **Comparación**
+   Enunciado: Compara dos configuraciones distintas de 02 numpy con misma validación cruzada.
+   Pista: Mantén condiciones idénticas para comparación objetiva y justa.
+   Criterio verificable: Comparación con valores numéricos y conclusión justificada con evidencia.
 
 ## Nivel desafío
 
-7. **Normalización**
-   Enunciado: Normaliza datos con z-score usando NumPy vectorizado.
-   Pista: (x - mean)/std con axis correcto.
-   Criterio verificable: Media ~0 y std ~1 tras normalización.
+7. **Caso end to end**
+   Enunciado: Desarrolla solución completa con preparación, aplicación, validación y evaluación en test.
+   Pista: Documenta cada paso y justifica decisiones con evidencia numérica.
+   Criterio verificable: Métricas numéricas calculadas en test con interpretación correcta.
 
-8. **Producto externo**
-   Enunciado: Calcula producto externo entre dos vectores con np.outer.
-   Pista: Compara con reshape y multiplicación.
-   Criterio verificable: Matriz resultado correcta.
+8. **Análisis crítico**
+   Enunciado: Identifica limitaciones y propone mejora medible cuantificando diferencia numérica.
+   Pista: Implementa mejora propuesta y compara con línea base usando misma validación.
+   Criterio verificable: Mejora cuantificada con diferencia numérica demostrada y justificada.
