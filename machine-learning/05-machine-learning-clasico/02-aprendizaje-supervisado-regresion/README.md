@@ -19,11 +19,9 @@ Este grupo conecta con fundamentos matemáticos, preparación de datos y evaluac
 ## 4. Ejemplos de código en Python
 
 ```python
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-iris = load_iris()
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42, stratify=iris.target)
-print(X_train.shape, X_test.shape)
+# regresion metrics
+from sklearn.metrics import mean_squared_error
+print(mean_squared_error([1,2],[1.1,1.9]))
 ```
 
 ```python
