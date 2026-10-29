@@ -57,3 +57,8 @@ print(X.shape)
 
 5. **Pregunta:** ¿Cómo verificar que es correcto?  
    **Respuesta orientativa:** Usar validación cruzada y métricas apropiadas al problema.
+
+
+## 10. Recursos para profundizar
+
+Para profundizar se recomienda consultar la documentación oficial y los libros recomendados, aplicando los conceptos con datasets públicos cargados por código.
