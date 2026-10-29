@@ -55,3 +55,15 @@ print(X_s.mean(axis=0)[:3])
 
 5. **Pregunta:** ¿Cómo comparar algoritmos?  
    **Respuesta orientativa:** Con misma validación cruzada y métricas objetivas.
+
+## 7. Aplicación práctica
+
+Los algoritmos de este grupo se aplican con datasets públicos usando pipelines, validación cruzada y métricas apropiadas.
+
+## 8. Checklist de verificación
+
+- [ ] Selecciono algoritmo adecuado al problema
+- [ ] Evito fuga de datos con pipelines
+- [ ] Uso validación cruzada
+- [ ] Evalúo con métricas correctas
+- [ ] Comparo resultados objetivamente

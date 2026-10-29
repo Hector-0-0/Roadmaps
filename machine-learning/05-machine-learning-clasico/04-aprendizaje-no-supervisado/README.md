@@ -59,3 +59,15 @@ print(X2.shape)
 
 5. **Pregunta:** ¿Qué es silhouette score?  
    **Respuesta orientativa:** Métrica para evaluar calidad de clustering.
+
+## 7. Aplicación práctica
+
+Los algoritmos de este grupo se aplican con datasets públicos usando pipelines, validación cruzada y métricas apropiadas.
+
+## 8. Checklist de verificación
+
+- [ ] Selecciono algoritmo adecuado al problema
+- [ ] Evito fuga de datos con pipelines
+- [ ] Uso validación cruzada
+- [ ] Evalúo con métricas correctas
+- [ ] Comparo resultados objetivamente

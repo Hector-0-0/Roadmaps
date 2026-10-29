@@ -59,3 +59,15 @@ print(action)
 
 5. **Pregunta:** ¿Aplicaciones?  
    **Respuesta orientativa:** Juegos, robótica, recomendadores, trading.
+
+## 7. Aplicación práctica
+
+Los algoritmos de este grupo se aplican con datasets públicos usando pipelines, validación cruzada y métricas apropiadas.
+
+## 8. Checklist de verificación
+
+- [ ] Selecciono algoritmo adecuado al problema
+- [ ] Evito fuga de datos con pipelines
+- [ ] Uso validación cruzada
+- [ ] Evalúo con métricas correctas
+- [ ] Comparo resultados objetivamente
