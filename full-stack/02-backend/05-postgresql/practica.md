@@ -42,6 +42,6 @@
    Criterio verificable: Con COMMIT los cambios persisten, con ROLLBACK los cambios se revierten completamente.
 
 8. **Consultas avanzadas con subconsultas**
-   Enunciado: Escribe una consulta con subconsulta para encontrar usuarios que tengan más de un post. Usa `EXISTS` o `IN`. Optimiza con índices conceptuales y explica uso.
+   Enunciado: Crea un índice con `CREATE INDEX` sobre una columna usada en filtros o joins (ej. posts.usuario_id). Ejecuta una consulta con `EXPLAIN ANALYZE` antes y después de crear el índice y compara el plan de ejecución. También escribe una consulta con subconsulta usando `EXISTS` o `IN` para encontrar usuarios que tengan más de un post.
    Pista: Una subconsulta puede ir en WHERE. `EXISTS` verifica existencia. Practica con los datos creados.
    Criterio verificable: La subconsulta retorna correctamente los usuarios que cumplen la condición, con resultados verificables.
