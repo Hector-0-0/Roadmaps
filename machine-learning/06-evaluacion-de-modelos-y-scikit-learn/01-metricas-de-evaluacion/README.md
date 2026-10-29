@@ -57,3 +57,15 @@ print(X.shape)
 
 5. **Pregunta:** ¿Cómo verificar que es correcto?  
    **Respuesta orientativa:** Usar validación cruzada y métricas apropiadas al problema.
+
+## 7. Aplicación práctica
+
+Las métricas se aplican según tipo de problema usando datasets públicos y se calculan correctamente en conjuntos de test.
+
+## 8. Checklist de verificación
+
+- [ ] Conozco métricas por tipo de problema
+- [ ] Calculo matriz de confusión correctamente
+- [ ] Uso ROC-AUC cuando aplica
+- [ ] Interpreto resultados correctamente
+- [ ] Evito usar accuracy en clases desbalanceadas

@@ -57,3 +57,15 @@ print(X.shape)
 
 5. **Pregunta:** ¿Cómo verificar que es correcto?  
    **Respuesta orientativa:** Usar validación cruzada y métricas apropiadas al problema.
+
+## 7. Aplicación práctica
+
+La regularización se aplica para controlar sobreajuste usando Ridge, Lasso o ElasticNet con validación cruzada.
+
+## 8. Checklist de verificación
+
+- [ ] Entiendo diferencia entre Ridge y Lasso
+- [ ] Uso validación cruzada para alpha
+- [ ] Interpreto coeficientes
+- [ ] Aplico con pipelines
+- [ ] Verifico prevención de sobreajuste

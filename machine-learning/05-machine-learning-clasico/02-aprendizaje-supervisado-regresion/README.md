@@ -55,3 +55,15 @@ print(X_s.mean(axis=0)[:3])
 
 5. **Pregunta:** ¿Cómo comparar algoritmos?  
    **Respuesta orientativa:** Con misma validación cruzada y métricas objetivas.
+
+## 7. Aplicación práctica
+
+Este tema se aplica con datasets públicos cargados por código como California Housing o Diabetes, usando pipelines correctos y validación rigurosa.
+
+## 8. Checklist de verificación
+
+- [ ] Comprendo los conceptos clave
+- [ ] Ejecuto los ejemplos sin errores
+- [ ] Resuelvo todas las prácticas
+- [ ] Uso validación cruzada
+- [ ] Evito fuga de datos con pipelines
