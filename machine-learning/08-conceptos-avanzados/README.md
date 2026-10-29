@@ -13,3 +13,7 @@ Explorar PLN, IA explicable y realizar un proyecto integrador de Machine Learnin
 ## Cómo avanzar
 
 Integra todos los conocimientos adquiridos en un proyecto realista y bien documentado.
+
+## Recursos adicionales
+
+Esta etapa integra conocimientos de todas las etapas anteriores para resolver un proyecto completo de Machine Learning desde la recolección de datos hasta la evaluación final.

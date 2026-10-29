@@ -57,3 +57,8 @@ print(X.shape)
 
 5. **Pregunta:** ¿Cómo verificar que es correcto?  
    **Respuesta orientativa:** Usar validación cruzada y métricas apropiadas al problema.
+
+
+## 9. Notas adicionales
+
+Los formatos de datos comunes en ML incluyen CSV para tabulares, JSON para anidados, Parquet para grandes volúmenes y otros formatos según el caso de uso. Es importante entender ventajas y desventajas de cada uno.
