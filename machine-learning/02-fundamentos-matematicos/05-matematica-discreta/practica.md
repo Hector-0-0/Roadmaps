@@ -3,19 +3,19 @@
 ## Nivel básico
 
 1. **Conjuntos**
-   Enunciado: Dados A={1,2,3,4}, B={3,4,5,6} calcula unión, intersección, diferencia A-B y simétrica.
-   Pista: Usa sets en Python.
-   Criterio verificable: Los 4 resultados correctos con tipos set/list apropiados.
+   Enunciado: Dados A={1,2,3,4}, B={3,4,5,6} calcula unión, intersección, diferencia A-B y diferencia simétrica.
+   Pista: Usa la clase set de Python con operadores |, &, -, ^ o métodos union/intersection/difference/symmetric_difference.
+   Criterio verificable: Los 4 resultados son correctos (union {1..6}, intersección {3,4}, A-B {1,2}, simétrica {1,2,5,6}).
 
 2. **Combinatoria**
-   Enunciado: Calcula permutaciones y combinaciones de 4 elementos tomados de 2 con itertools.
-   Pista: Usa permutations y combinations.
-   Criterio verificable: Conteos correctos (P(4,2)=12, C(4,2)=6) y listas generadas.
+   Enunciado: Usa itertools.permutations y itertools.combinations para obtener P(4,2) y C(4,2) mostrando las listas generadas.
+   Pista: Recuerda que permutations importa el orden y combinations no lo importa, por lo que los conteos difieren.
+   Criterio verificable: Se obtienen 12 permutaciones y 6 combinaciones, con conteos numéricos correctos.
 
 3. **Conteo manual**
-   Enunciado: ¿Cuántas formas de elegir 3 características de 10? Calcula y verifica con fórmula.
-   Pista: $C(10,3)=120$.
-   Criterio verificable: Resultado numérico 120 con cálculo correcto.
+   Enunciado: Calcula C(10,3) usando la fórmula $C(n,r)=\frac{n!}{r!(n-r)!}$ con Python y verifica con math.comb o itertools.combinations.
+   Pista: Usa math.comb o math.factorial para calcular la fórmula y compara con el conteo real de combinaciones.
+   Criterio verificable: Resultado numérico es 120 y coincide con la longitud de la lista de combinaciones.
 
 ## Nivel intermedio
 
@@ -25,21 +25,21 @@
    Criterio verificable: BFS retorna nodos visitados en orden correcto.
 
 5. **DFS**
-   Enunciado: Implementa DFS recursivo para el mismo grafo y compara con BFS.
-   Pista: Usa set para visitados.
-   Criterio verificable: DFS funciona, diferencias con BFS documentadas.
+   Enunciado: Implementa DFS recursivo para el mismo grafo usando un conjunto de visitados para evitar ciclos.
+   Pista: Define la función recursiva que marca como visitado y recorre vecinos, controlando el caso de nodos ya visitados.
+   Criterio verificable: DFS recorre todos los nodos alcanzables, no repite nodos y se documentan diferencias con BFS.
 
 6. **Árbol de decisión simple**
-   Enunciado: Modela árbol binario simple con diccionarios y recorrelo con DFS.
-   Pista: Nodo con valor, izquierda, derecha.
-   Criterio verificable: Recorrido inorden/preorden funciona correctamente.
+   Enunciado: Modela un árbol binario simple con diccionarios (valor, izquierda, derecha) y realiza recorrido preorden con DFS recursivo.
+   Pista: Usa recursión definiendo caso base cuando el nodo es None y visitando raíz, izquierda, derecha en ese orden.
+   Criterio verificable: El recorrido preorden produce la secuencia correcta para el árbol definido.
 
 ## Nivel desafío
 
 7. **Subconjuntos**
-   Enunciado: Genera todos los subconjuntos de {a,b,c} usando itertools o recursión.
-   Pista: Total 2^3=8.
-   Criterio verificable: 8 subconjuntos generados correctamente incluyendo vacío.
+   Enunciado: Genera todos los subconjuntos de {a,b,c} usando recursión o itertools.chain, incluyendo el conjunto vacío.
+   Pista: Usa el principio de que para cada elemento puedes incluirlo o excluirlo, resultando en 2^n subconjuntos totales.
+   Criterio verificable: Se generan exactamente 8 subconjuntos incluyendo el vacío y todos son distintos.
 
 8. **Aplicación a ML**
    Enunciado: Cuenta espacios de búsqueda para grid de hiperparámetros simple y analiza complejidad.
