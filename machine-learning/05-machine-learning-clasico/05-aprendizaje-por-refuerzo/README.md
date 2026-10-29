@@ -75,3 +75,7 @@ Los algoritmos de este grupo se aplican con datasets públicos usando pipelines,
 ## 9. Recursos adicionales
 
 Se recomienda practicar con entornos simples y entender los fundamentos antes de pasar a DQN y algoritmos avanzados.
+
+## 10. Notas para estudio
+
+El aprendizaje por refuerzo requiere entender la diferencia entre modelos basados en valores y modelos basados en políticas, así como el balance entre exploración y explotación.
