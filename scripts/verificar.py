@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Verifica la calidad del repositorio. Uso: python3 scripts/verificar.py [--urls]"""
+import ast
 import glob
 import os
 import re
@@ -58,6 +59,16 @@ for f in glob.glob("**/*.md", recursive=True):
             errores.append(f"{f}: enlace roto {link}")
     if f != "AGENTS.md" and ("\u2014" in t or " -- " in t):
         errores.append(f"{f}: contiene guion largo o ' -- '")
+
+# 4b. Validar sintaxis de bloques ```python en todos los README.md
+for f in sorted(glob.glob("**/README.md", recursive=True)):
+    t = leer(f)
+    bloques = re.findall(r"```python\n(.*?)```", t, re.S)
+    for idx, bloque in enumerate(bloques, 1):
+        try:
+            ast.parse(bloque)
+        except SyntaxError:
+            errores.append(f"{f}: bloque python con sintaxis inválida (bloque {idx})")
 
 # 4. Opcional: comprobar URLs (requiere internet)
 if "--urls" in sys.argv:

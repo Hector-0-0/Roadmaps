@@ -52,3 +52,5 @@ N. **Título**
    Enunciado: pasos concretos y accionables.
    Pista: al menos una oración útil de 6 o más palabras.
    Criterio verificable: algo observable y comprobable.
+
+El script también valida la sintaxis de los bloques ```python en todos los README.md con `ast.parse`. Los bloques con sintaxis inválida generan un error del tipo `bloque python con sintaxis inválida (archivo, número de bloque)`.
