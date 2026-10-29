@@ -43,3 +43,12 @@ Si un tema agrupa varios sub-temas, crear subcarpeta por sub-tema con la misma p
 2. Actualizar README índice con nueva fila en tabla.
 3. Seguir las mismas plantillas de tema y checkpoint.
 4. Mantener atribución a roadmap.sh correspondiente.
+
+## Verificación
+
+Antes de dar por terminada cualquier tarea hay que ejecutar `python3 scripts/verificar.py` (y con `--urls` cuando haya internet) y dejar 0 errores. El formato obligatorio de cada ejercicio de practica.md es:
+
+N. **Título**
+   Enunciado: pasos concretos y accionables.
+   Pista: al menos una oración útil de 6 o más palabras.
+   Criterio verificable: algo observable y comprobable.
