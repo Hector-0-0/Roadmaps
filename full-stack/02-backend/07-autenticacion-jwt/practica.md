@@ -37,7 +37,7 @@
 ## Nivel desafío
 
 7. **Cookie httpOnly vs localStorage**
-   Enunciado: Implementa dos formas: enviar token en respuesta JSON (simulando localStorage) y enviar token en cookie httpOnly con flags `httpOnly`, `secure` (conceptual), `sameSite`. Documenta vulnerabilidades: XSS puede robar de localStorage, CSRF es riesgo de cookies.
+   Enunciado: Implementa dos formas: enviar token en respuesta JSON (simulando localStorage) y enviar token en cookie httpOnly con flags `httpOnly`, `secure`, `sameSite`. Documenta vulnerabilidades: XSS puede robar de localStorage, CSRF es riesgo de cookies.
    Pista: Usa `res.cookie()` de Express. httpOnly impide acceso desde JavaScript. Entiende tradeoffs de seguridad entre ambos enfoques.
    Criterio verificable: Ambas implementaciones funcionan, se documentan diferencias, riesgos y cuándo usar cada una.
 
