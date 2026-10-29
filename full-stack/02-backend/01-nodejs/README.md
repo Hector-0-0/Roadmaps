@@ -15,7 +15,9 @@ Permite usar JavaScript en backend, compartir lógica, y crear APIs que consumir
 ```javascript
 // CommonJS
 const fs = require('fs');
+```
 
+```javascript
 // ES Modules (ESM)
 import fs from 'fs';
 ```
