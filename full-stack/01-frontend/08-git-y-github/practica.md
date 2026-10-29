@@ -37,7 +37,7 @@
 ## Nivel desafío
 
 7. **Pull Request simulado con ramas**
-   Enunciado: Crea rama feature, haz cambios significativos, sube la rama con `git push -u origin <rama>`. Documenta el proceso para crear un Pull Request en GitHub (descripción, reviewers conceptuales). Fusiona vía merge.
+   Enunciado: Crea rama feature, haz cambios significativos, sube la rama con `git push -u origin <rama>`. Abre un Pull Request en GitHub desde esa rama hacia main con descripción detallada de los cambios. Solicita revisión a un colaborador o a una segunda cuenta, revisa comentarios si los hay y fusiona el PR. Documenta todo el proceso con capturas o pasos.
    Pista: Un PR permite revisión de código antes de fusionar. Documenta cambios, propósito y pruebas realizadas.
    Criterio verificable: Rama feature existe en remoto, hay commits distintos a main, y se documenta el flujo completo de PR con pasos claros.
 
