@@ -54,3 +54,5 @@ N. **Título**
    Criterio verificable: algo observable y comprobable.
 
 El script también valida la sintaxis de los bloques ```python en todos los README.md con `ast.parse`. Los bloques con sintaxis inválida generan un error del tipo `bloque python con sintaxis inválida (archivo, número de bloque)`.
+
+Para machine-learning/ se aplican comprobaciones adicionales: estructura de carpetas y archivos (tema requiere README, practica.md, recursos.md; checkpoint requiere README y proyectos/.gitkeep), tamaños mínimos (teoría >=2500 bytes, checkpoint >=1500 bytes, README de etapa >=800 bytes con enlaces a subcarpetas), secciones numeradas ## 1. a ## 6. en READMEs de teoría, detección de duplicados de práctica/recursos/README/bloques python, frases de relleno prohibidas y al menos 3 expresiones LaTeX en temas de fundamentos matemáticos.
