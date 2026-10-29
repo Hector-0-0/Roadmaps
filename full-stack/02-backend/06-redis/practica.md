@@ -42,6 +42,6 @@
    Criterio verificable: Primeras 5 peticiones permitidas, sexta retorna código 429 o error, contador se resetea tras expirar TTL.
 
 8. **Persistencia RDB/AOF (práctico)**
-   Enunciado: Configura Redis para habilitar RDB (guardar snapshots) y/o AOF (appendonly). Genera datos, fuerza guardado con `SAVE` o `BGSAVE`. Reinicia Redis conceptualmente documentando y verifica persistencia.
+   Enunciado: Configura Redis para habilitar RDB (guardar snapshots) y/o AOF (appendonly) editando `redis.conf`. Genera datos, fuerza guardado con `BGSAVE`. Detén y reinicia Redis, verifica que los datos persistan tras reinicio.
    Pista: Revisa `redis.conf` para `save`, `appendonly yes`. Usa `BGSAVE` para guardar sin bloquear. Documenta configuración aplicada.
    Criterio verificable: Configuración de persistencia aplicada, snapshot generado (archivo dump.rdb), comportamiento documentado con evidencia.
