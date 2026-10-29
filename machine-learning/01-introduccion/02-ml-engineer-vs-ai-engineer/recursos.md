@@ -1,11 +1,11 @@
-# Recursos - ML Engineer vs AI Engineer
+# Recursos - 02 Ml Engineer Vs Ai Engineer
 
 ## Documentación oficial
-- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial para ML clásico.
-- **LangChain Documentation**: [python.langchain.com/docs/](https://python.langchain.com/docs/) - Documentación oficial para aplicaciones con LLMs.
-- **OpenAI API Documentation**: [platform.openai.com/docs](https://platform.openai.com/docs) - Referencia de API para modelos generativos.
+- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial aplicada a 02 ml engineer vs ai engineer.
+- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Referencia para operaciones numéricas.
+- **pandas Documentation**: [pandas.pydata.org/docs/](https://pandas.pydata.org/docs/) - Referencia para manipulación de datos.
 
 ## Lectura o curso reconocido
-- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos aplicados a ML.
-- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código y teoría.
-- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica sobre aprendizaje profundo.
+- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos para ML.
+- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código ejecutable.
+- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica para profundizar.

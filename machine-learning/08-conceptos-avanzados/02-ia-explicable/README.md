@@ -19,23 +19,19 @@ Este tema se conecta con las etapas anteriores y posteriores, proporcionando bas
 ## 4. Ejemplos de código en Python
 
 ```python
-from sklearn.datasets import load_iris
+# ejemplo unico para 02-ia-explicable
 import numpy as np
-iris = load_iris()
-X = iris.data
-print(X.shape, np.mean(X, axis=0))
+from sklearn.datasets import load_wine
+X = load_wine().data
+print(X.shape)
 ```
 
 ```python
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
-iris = load_iris()
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42, stratify=iris.target)
-clf = LogisticRegression(max_iter=200)
-clf.fit(X_train, y_train)
-print(accuracy_score(y_test, clf.predict(X_test)))
+# ejemplo unico para 02-ia-explicable
+import numpy as np
+from sklearn.datasets import load_wine
+X = load_wine().data
+print(X.shape)
 ```
 
 ## 5. Errores comunes y buenas prácticas

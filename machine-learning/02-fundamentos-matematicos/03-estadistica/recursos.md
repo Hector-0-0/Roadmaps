@@ -1,11 +1,11 @@
-# Recursos - Estadística para Machine Learning
+# Recursos - 03 Estadistica
 
 ## Documentación oficial
-- **SciPy Stats**: [docs.scipy.org/doc/scipy/reference/stats.html](https://docs.scipy.org/doc/scipy/reference/stats.html) - Funciones estadísticas en SciPy.
-- **NumPy Statistics**: [numpy.org/doc/stable/reference/routines.statistics.html](https://numpy.org/doc/stable/reference/routines.statistics.html) - Funciones estadísticas básicas.
-- **Seaborn Documentation**: [seaborn.pydata.org/](https://seaborn.pydata.org/) - Visualización estadística.
+- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial aplicada a 03 estadistica.
+- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Referencia para operaciones numéricas.
+- **pandas Documentation**: [pandas.pydata.org/docs/](https://pandas.pydata.org/docs/) - Referencia para manipulación de datos.
 
 ## Lectura o curso reconocido
-- **Mathematics for Machine Learning (Statistics)**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos estadísticos para ML.
-- **Seeing Theory**: [seeing-theory.brown.edu](https://seeing-theory.brown.edu/) - Visualización interactiva de probabilidad y estadística.
-- **Khan Academy Statistics**: [es.khanacademy.org/math/statistics-probability](https://es.khanacademy.org/math/statistics-probability) - Conceptos fundamentales con ejercicios.
+- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos para ML.
+- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código ejecutable.
+- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica para profundizar.

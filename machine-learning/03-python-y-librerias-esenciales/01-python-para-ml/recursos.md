@@ -1,11 +1,11 @@
-# Recursos - Python para Machine Learning
+# Recursos - 01 Python Para Ml
 
 ## Documentación oficial
-- **Python Documentation**: [docs.python.org/3/](https://docs.python.org/3/) - Documentación oficial completa.
-- **Python Tutorial**: [docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/) - Tutorial oficial paso a paso.
-- **Real Python**: [realpython.com/](https://realpython.com/) - Tutoriales prácticos y bien explicados.
+- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial aplicada a 01 python para ml.
+- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Referencia para operaciones numéricas.
+- **pandas Documentation**: [pandas.pydata.org/docs/](https://pandas.pydata.org/docs/) - Referencia para manipulación de datos.
 
 ## Lectura o curso reconocido
-- **Automate the Boring Stuff with Python**: [automatetheboringstuff.com/](https://automatetheboringstuff.com/) - Práctico para automatización.
-- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Usa Python en contextos de ML.
-- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos.
+- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos para ML.
+- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código ejecutable.
+- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica para profundizar.

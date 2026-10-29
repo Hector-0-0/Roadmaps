@@ -1,11 +1,11 @@
-# Recursos - Matplotlib
+# Recursos - 04 Matplotlib
 
 ## Documentación oficial
-- **Matplotlib Documentation**: [matplotlib.org/stable/](https://matplotlib.org/stable/) - Documentación oficial.
-- **Matplotlib Tutorials**: [matplotlib.org/stable/tutorials/](https://matplotlib.org/stable/tutorials/) - Tutoriales oficiales.
-- **Matplotlib Gallery**: [matplotlib.org/stable/gallery/](https://matplotlib.org/stable/gallery/) - Ejemplos visuales.
+- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial aplicada a 04 matplotlib.
+- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Referencia para operaciones numéricas.
+- **pandas Documentation**: [pandas.pydata.org/docs/](https://pandas.pydata.org/docs/) - Referencia para manipulación de datos.
 
 ## Lectura o curso reconocido
-- **Real Python Matplotlib**: [realpython.com/python-matplotlib-guide/](https://realpython.com/python-matplotlib-guide/) - Guía práctica completa.
-- **Matplotlib Cheat Sheet**: [matplotlib.org/cheatsheets/](https://matplotlib.org/cheatsheets/) - Hojas de referencia.
-- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Visualización en contexto ML.
+- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos para ML.
+- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código ejecutable.
+- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica para profundizar.

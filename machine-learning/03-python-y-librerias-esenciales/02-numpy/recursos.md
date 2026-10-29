@@ -1,11 +1,11 @@
-# Recursos - NumPy
+# Recursos - 02 Numpy
 
 ## Documentación oficial
-- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Documentación oficial completa.
-- **NumPy User Guide**: [numpy.org/doc/stable/user/](https://numpy.org/doc/stable/user/) - Guía de usuario.
-- **NumPy Quickstart**: [numpy.org/doc/stable/user/quickstart.html](https://numpy.org/doc/stable/user/quickstart.html) - Inicio rápido.
+- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial aplicada a 02 numpy.
+- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Referencia para operaciones numéricas.
+- **pandas Documentation**: [pandas.pydata.org/docs/](https://pandas.pydata.org/docs/) - Referencia para manipulación de datos.
 
 ## Lectura o curso reconocido
-- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Álgebra lineal con NumPy.
-- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Usa NumPy extensivamente.
-- **Real Python NumPy**: [realpython.com/numpy-python/](https://realpython.com/numpy-python/) - Tutorial práctico.
+- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos para ML.
+- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código ejecutable.
+- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica para profundizar.

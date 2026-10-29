@@ -1,11 +1,11 @@
-# Recursos - Seaborn
+# Recursos - 05 Seaborn
 
 ## Documentación oficial
-- **Seaborn Documentation**: [seaborn.pydata.org/](https://seaborn.pydata.org/) - Documentación oficial.
-- **Seaborn Tutorial**: [seaborn.pydata.org/tutorial.html](https://seaborn.pydata.org/tutorial.html) - Tutoriales oficiales.
-- **Seaborn Gallery**: [seaborn.pydata.org/examples/](https://seaborn.pydata.org/examples/) - Galería de ejemplos.
+- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial aplicada a 05 seaborn.
+- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Referencia para operaciones numéricas.
+- **pandas Documentation**: [pandas.pydata.org/docs/](https://pandas.pydata.org/docs/) - Referencia para manipulación de datos.
 
 ## Lectura o curso reconocido
-- **Real Python Seaborn**: [realpython.com/python-seaborn/](https://realpython.com/python-seaborn/) - Guía práctica.
-- **Seaborn API Reference**: [seaborn.pydata.org/api.html](https://seaborn.pydata.org/api.html) - Referencia completa.
-- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Visualización en ML.
+- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos para ML.
+- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código ejecutable.
+- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica para profundizar.

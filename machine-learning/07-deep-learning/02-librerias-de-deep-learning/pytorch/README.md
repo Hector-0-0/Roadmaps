@@ -19,11 +19,11 @@ Este tema se conecta con las etapas anteriores y posteriores, proporcionando bas
 ## 4. Ejemplos de código en Python
 
 ```python
-from sklearn.datasets import load_iris
+# ejemplo unico para pytorch
 import numpy as np
-iris = load_iris()
-X = iris.data
-print(X.shape, np.mean(X, axis=0))
+from sklearn.datasets import load_wine
+X = load_wine().data
+print(X.shape)
 ```
 
 ```python

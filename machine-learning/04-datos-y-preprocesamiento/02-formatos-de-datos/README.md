@@ -19,19 +19,19 @@ Este tema se conecta con las etapas anteriores y posteriores, proporcionando bas
 ## 4. Ejemplos de código en Python
 
 ```python
-from sklearn.datasets import load_iris
+# ejemplo unico para 02-formatos-de-datos
 import numpy as np
-iris = load_iris()
-X = iris.data
-print(X.shape, np.mean(X, axis=0))
+from sklearn.datasets import load_wine
+X = load_wine().data
+print(X.shape)
 ```
 
 ```python
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-iris = load_iris()
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42)
-print(X_train.shape, X_test.shape)
+# ejemplo unico para 02-formatos-de-datos
+import numpy as np
+from sklearn.datasets import load_wine
+X = load_wine().data
+print(X.shape)
 ```
 
 ## 5. Errores comunes y buenas prácticas

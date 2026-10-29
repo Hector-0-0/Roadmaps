@@ -1,11 +1,11 @@
-# Recursos - Cálculo para Machine Learning
+# Recursos - 01 Calculo
 
 ## Documentación oficial
-- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Arreglos, álgebra numérica y funciones matemáticas.
-- **SciPy Documentation**: [docs.scipy.org/doc/scipy/](https://docs.scipy.org/doc/scipy/) - Optimizadores y utilidades científicas.
-- **Matplotlib Documentation**: [matplotlib.org/stable/](https://matplotlib.org/stable/) - Visualización para analizar convergencia.
+- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial aplicada a 01 calculo.
+- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Referencia para operaciones numéricas.
+- **pandas Documentation**: [pandas.pydata.org/docs/](https://pandas.pydata.org/docs/) - Referencia para manipulación de datos.
 
 ## Lectura o curso reconocido
-- **Mathematics for Machine Learning (Cálculo)**: [mml-book.github.io](https://mml-book.github.io/) - Capítulos sobre cálculo y optimización para ML.
-- **3Blue1Brown - Essence of Calculus**: [www.3blue1brown.com/lessons/essence-of-calculus](https://www.3blue1brown.com/topics/calculus) - Visualización intuitiva de derivadas y gradientes.
-- **MIT OCW 18.01/18.02**: [ocw.mit.edu](https://ocw.mit.edu/) - Cursos de cálculo con material completo y verificable.
+- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos para ML.
+- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código ejecutable.
+- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica para profundizar.

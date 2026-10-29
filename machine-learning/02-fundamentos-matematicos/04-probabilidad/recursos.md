@@ -1,10 +1,11 @@
-# Recursos - Probabilidad para Machine Learning
+# Recursos - 04 Probabilidad
 
 ## Documentación oficial
-- **SciPy Stats**: [docs.scipy.org/doc/scipy/reference/stats.html](https://docs.scipy.org/doc/scipy/reference/stats.html) - Distribuciones y funciones probabilísticas.
-- **NumPy Random**: [numpy.org/doc/stable/reference/random/](https://numpy.org/doc/stable/reference/random/) - Generación aleatoria para simulaciones.
+- **scikit-learn Documentation**: [scikit-learn.org/stable/](https://scikit-learn.org/stable/) - Documentación oficial aplicada a 04 probabilidad.
+- **NumPy Documentation**: [numpy.org/doc/](https://numpy.org/doc/) - Referencia para operaciones numéricas.
+- **pandas Documentation**: [pandas.pydata.org/docs/](https://pandas.pydata.org/docs/) - Referencia para manipulación de datos.
 
 ## Lectura o curso reconocido
-- **Mathematics for Machine Learning (Probability)**: [mml-book.github.io](https://mml-book.github.io/) - Probabilidad aplicada a ML.
-- **Seeing Theory**: [seeing-theory.brown.edu](https://seeing-theory.brown.edu/) - Visualización interactiva de probabilidad.
-- **Khan Academy Probability**: [es.khanacademy.org/math/statistics-probability/probability-library](https://es.khanacademy.org/math/statistics-probability/probability-library) - Fundamentos con ejercicios.
+- **Mathematics for Machine Learning**: [mml-book.github.io](https://mml-book.github.io/) - Fundamentos matemáticos para ML.
+- **Dive into Deep Learning**: [d2l.ai](https://d2l.ai/) - Enfoque práctico con código ejecutable.
+- **Deep Learning Book**: [www.deeplearningbook.org](https://www.deeplearningbook.org/) - Referencia teórica para profundizar.
